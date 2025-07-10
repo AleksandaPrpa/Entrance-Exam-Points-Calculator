@@ -1,43 +1,58 @@
-function GradesAvg({ index, AllGrades, setAllGrades, children }) {
+function GradesAvg({ index, AllGrades, setAllGrades, children, value }) {
   function handleChange(e) {
+    const raw = e.target.value;
+    if (raw === "") {
+      setAllGrades({
+        ...AllGrades,
+        ...(index === 0 && { firstYear: "" }),
+        ...(index === 1 && { secondYear: "" }),
+        ...(index === 2 && { thirdYear: "" }),
+        ...(index === 3 && { fourthYear: "" }),
+      });
+      return;
+    }
+    const input = Number(raw);
+    if (input < 1 || input > 5) return;
     if (index === 0)
-      setAllGrades([
-        Number(e.target.value),
-        AllGrades[1],
-        AllGrades[2],
-        AllGrades[3],
-      ]);
+      setAllGrades({
+        firstYear: input,
+        secondYear: AllGrades.secondYear,
+        thirdYear: AllGrades.thirdYear,
+        fourthYear: AllGrades.fourthYear,
+      });
     else if (index === 1)
-      setAllGrades([
-        AllGrades[0],
-        Number(e.target.value),
-        AllGrades[2],
-        AllGrades[3],
-      ]);
+      setAllGrades({
+        firstYear: AllGrades.firstYear,
+        secondYear: input,
+        thirdYear: AllGrades.thirdYear,
+        fourthYear: AllGrades.fourthYear,
+      });
     else if (index === 2)
-      setAllGrades([
-        AllGrades[0],
-        AllGrades[1],
-        Number(e.target.value),
-        AllGrades[3],
-      ]);
+      setAllGrades({
+        firstYear: AllGrades.firstYear,
+        secondYear: AllGrades.secondYear,
+        thirdYear: input,
+        fourthYear: AllGrades.fourthYear,
+      });
     else if (index === 3)
-      setAllGrades([
-        AllGrades[0],
-        AllGrades[1],
-        AllGrades[2],
-        Number(e.target.value),
-      ]);
+      setAllGrades({
+        firstYear: AllGrades.firstYear,
+        secondYear: AllGrades.secondYear,
+        thirdYear: AllGrades.thirdYear,
+        fourthYear: input,
+      });
   }
   return (
-    <div>
-      <h3>{children}</h3>
+    <div className="flex flex-col gap-2 bg-slate-600 p-4 rounded-md shadow-sm">
+      <label className="text-sm font-medium text-white">{children}</label>
       <input
         type="number"
         min={1}
         max={5}
-        value={AllGrades[index]}
+        step={0.01}
+        value={value}
         onChange={handleChange}
+        className="p-2 rounded-md border border-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-400 text-white"
       />
     </div>
   );
