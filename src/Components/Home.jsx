@@ -22,8 +22,6 @@ function Home() {
 
   function rememberGrades() {
     localStorage.setItem("AllGrades", JSON.stringify(AllGrades));
-    console.log(localStorage.getItem("AllGrades"));
-    console.log(AllGrades);
   }
   function goToExam() {
     navigate("/exam");

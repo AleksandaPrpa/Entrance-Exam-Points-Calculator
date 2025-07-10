@@ -1,0 +1,52 @@
+export function getSystem(System) {
+  switch (System) {
+    case "ETF":
+      return [
+        { id: 1, name: "Zadatak 1", points: 3, negativePoints: -(3 * 0.16) },
+        { id: 2, name: "Zadatak 2", points: 3, negativePoints: -(3 * 0.16) },
+        { id: 3, name: "Zadatak 3", points: 4, negativePoints: -(4 * 0.16) },
+        { id: 4, name: "Zadatak 4", points: 4, negativePoints: -(4 * 0.16) },
+        { id: 5, name: "Zadatak 5", points: 4, negativePoints: -(4 * 0.16) },
+        { id: 6, name: "Zadatak 6", points: 4, negativePoints: -(4 * 0.16) },
+        { id: 7, name: "Zadatak 7", points: 4, negativePoints: -(4 * 0.16) },
+        { id: 8, name: "Zadatak 8", points: 5, negativePoints: -(5 * 0.16) },
+        { id: 9, name: "Zadatak 9", points: 5, negativePoints: -(5 * 0.16) },
+        { id: 10, name: "Zadatak 10", points: 5, negativePoints: -(5 * 0.16) },
+        { id: 11, name: "Zadatak 11", points: 5, negativePoints: -(5 * 0.16) },
+        { id: 12, name: "Zadatak 12", points: 5, negativePoints: -(5 * 0.16) },
+        { id: 13, name: "Zadatak 13", points: 5, negativePoints: -(5 * 0.16) },
+        { id: 14, name: "Zadatak 14", points: 6, negativePoints: -(6 * 0.16) },
+        { id: 15, name: "Zadatak 15", points: 6, negativePoints: -(6 * 0.16) },
+        { id: 16, name: "Zadatak 16", points: 6, negativePoints: -(6 * 0.16) },
+        { id: 17, name: "Zadatak 17", points: 6, negativePoints: -(6 * 0.16) },
+        { id: 18, name: "Zadatak 18", points: 6, negativePoints: -(6 * 0.16) },
+        { id: 19, name: "Zadatak 19", points: 7, negativePoints: -(7 * 0.16) },
+        { id: 20, name: "Zadatak 20", points: 7, negativePoints: -(7 * 0.16) },
+      ];
+    case "FON":
+      return [
+        { id: 1, name: "Zadatak 1", points: 5, negativePoints: -0.5 },
+        { id: 2, name: "Zadatak 2", points: 5, negativePoints: -0.5 },
+        { id: 3, name: "Zadatak 3", points: 5, negativePoints: -0.5 },
+        { id: 4, name: "Zadatak 4", points: 5, negativePoints: -0.5 },
+        { id: 5, name: "Zadatak 5", points: 5, negativePoints: -0.5 },
+        { id: 6, name: "Zadatak 6", points: 5, negativePoints: -0.5 },
+        { id: 7, name: "Zadatak 7", points: 5, negativePoints: -0.5 },
+        { id: 8, name: "Zadatak 8", points: 5, negativePoints: -0.5 },
+        { id: 9, name: "Zadatak 9", points: 5, negativePoints: -0.5 },
+        { id: 10, name: "Zadatak 10", points: 5, negativePoints: -0.5 },
+        { id: 11, name: "Zadatak 11", points: 5, negativePoints: -0.5 },
+        { id: 12, name: "Zadatak 12", points: 5, negativePoints: -0.5 },
+        { id: 13, name: "Zadatak 13", points: 5, negativePoints: -0.5 },
+        { id: 14, name: "Zadatak 14", points: 5, negativePoints: -0.5 },
+        { id: 15, name: "Zadatak 15", points: 5, negativePoints: -0.5 },
+        { id: 16, name: "Zadatak 16", points: 5, negativePoints: -0.5 },
+        { id: 17, name: "Zadatak 17", points: 5, negativePoints: -0.5 },
+        { id: 18, name: "Zadatak 18", points: 5, negativePoints: -0.5 },
+        { id: 19, name: "Zadatak 19", points: 5, negativePoints: -0.5 },
+        { id: 20, name: "Zadatak 20", points: 5, negativePoints: -0.5 },
+      ];
+    default:
+      break;
+  }
+}
