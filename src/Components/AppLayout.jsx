@@ -8,7 +8,7 @@ function AppLayout() {
   return (
     <div>
       {isLoading && <Loader />}
-      <main className="w-full">
+      <main className="w-screen overflow-x-hidden">
         <Outlet />
       </main>
     </div>

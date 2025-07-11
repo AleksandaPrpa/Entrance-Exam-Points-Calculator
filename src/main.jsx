@@ -5,7 +5,7 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <div className="w-screen bg-slate-800">
+    <div className="w-screen bg-slate-800 overflow-x-hidden">
       <App />
     </div>
   </StrictMode>

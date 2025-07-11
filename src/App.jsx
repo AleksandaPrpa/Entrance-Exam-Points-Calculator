@@ -3,6 +3,7 @@ import Home from "./Components/Home";
 import Error from "./Components/Error";
 import AppLayout from "./Components/AppLayout";
 import Exam from "./Components/Exam";
+import Summary from "./Components/Summary";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "/exam",
         element: <Exam />,
+      },
+      {
+        path: "/summary",
+        element: <Summary />,
       },
     ],
   },
