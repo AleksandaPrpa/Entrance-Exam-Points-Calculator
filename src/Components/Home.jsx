@@ -40,8 +40,11 @@ function Home() {
           ocene i rezultate sa prijemnog i odmah vidiš koliko bodova imaš — i da
           li si bliže budžetu ili samofinansiranju. <br /> <br />
           <span className="text-sky-400 font-medium">
-            Važno: ovaj sajt je napravljen za vežbu i informativne svrhe, pa
-            bodovi koje izračuna ne mogu zameniti zvanične rezultate.
+            <strong>Važno:</strong> ovaj sajt je napravljen za vežbu i
+            informativne svrhe, pa bodovi koje izračuna ne mogu zameniti
+            zvanične rezultate. Granice za budžet i samofinansirajuće statuse su
+            okvirne i prikupljene na osnovu dostupnih podataka iz prethodnih
+            godina.
           </span>
         </p>
       </header>
