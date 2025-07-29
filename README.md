@@ -1,12 +1,12 @@
-# React + Vite
+Entrance Exam Points Calculator is a web application designed to help students in Serbia calculate their total admission score for university enrollment — based on high school grades and entrance exam performance.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This version of the calculator is tailored specifically for faculties that use a standardized entrance exam format consisting of 20 equally weighted tasks, for a total of 60 entrance exam points. Combined with high school grades (up to 40 points), students receive a final admission score out of 100.
 
-Currently, two official plugins are available:
+Supported faculties include:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ETF – School of Electrical Engineering, University of Belgrade
 
-## Expanding the ESLint configuration
+FON – Faculty of Organizational Sciences, University of Belgrade
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+These institutions typically follow the 20-task model, where each task is graded with whole numbers and contributes equally to the final entrance exam score.
