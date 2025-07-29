@@ -35,10 +35,10 @@ function Home() {
         <p className="text-gray-100 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
           Ovaj sajt je namenjen maturantima koji žele da izračunaju ukupan broj
           bodova za upis na fakultete koji imaju matematiku kao prijemni ispit.
-          Bilo da konkurišeš na ETF, FON, Matematički fakultet ili slične
-          tehničko-prirodne smerove, ovde možeš jednostavno da uneseš svoje
-          ocene i rezultate sa prijemnog i odmah vidiš koliko bodova imaš — i da
-          li si bliže budžetu ili samofinansiranju. <br /> <br />
+          Bilo da konkurišeš na ETF, FON, Matematički fakultet ili Građevinski
+          fakultet ovde možeš jednostavno da uneseš svoje ocene i rezultate sa
+          prijemnog i odmah vidiš koliko bodova imaš — i da li si bliže budžetu
+          ili samofinansiranju. <br /> <br />
           <span className="text-sky-400 font-medium">
             <strong>Važno:</strong> ovaj sajt je napravljen za vežbu i
             informativne svrhe, pa bodovi koje izračuna ne mogu zameniti

@@ -55,6 +55,22 @@ function Summary() {
       } else {
         setMessage("Upao si na budžet");
       }
+    } else if (examData.system === "Građevinski") {
+      if (ukupno < 40) {
+        setMessage("Nisi upisao");
+      } else if (ukupno < 62) {
+        setMessage("Upao si kao samofinansirajuci student");
+      } else {
+        setMessage("Upao si na budžet");
+      }
+    } else if (examData.system === "Matematički") {
+      if (ukupno < 40) {
+        setMessage("Nisi upisao");
+      } else if (ukupno < 65) {
+        setMessage("Upao si kao samofinansirajuci student");
+      } else {
+        setMessage("Upao si na budžet");
+      }
     }
   }, []);
 

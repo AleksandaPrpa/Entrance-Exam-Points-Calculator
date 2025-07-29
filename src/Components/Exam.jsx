@@ -8,7 +8,7 @@ function Exam() {
   const [answers, setAnswers] = useState(Array(20).fill(null));
 
   const [system, setSystem] = useState("ETF");
-  const tasks = system === "ETF" ? getSystem("ETF") : getSystem("FON");
+  const tasks = getSystem(system);
   function handleChange(taskIndex, value) {
     const newAnswers = [...answers];
     newAnswers[taskIndex] = value;
@@ -54,6 +54,8 @@ function Exam() {
         >
           <option value="ETF">ETF</option>
           <option value="FON">FON</option>
+          <option value="MATF">MATF</option>
+          <option value="GRF">GRF</option>
         </select>
       </div>
 
