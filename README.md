@@ -4,9 +4,12 @@ This version of the calculator is tailored specifically for faculties that use a
 
 Supported faculties include:
 
-ETF – School of Electrical Engineering, University of Belgrade
+• ETF – School of Electrical Engineering, University of Belgrade
 
-FON – Faculty of Organizational Sciences, University of Belgrade
+• FON – Faculty of Organizational Sciences, University of Belgrade
 
+• MATF – Faculty of Mathematics, University of Belgrade
 
-These institutions typically follow the 20-task model, where each task is graded with whole numbers and contributes equally to the final entrance exam score.
+• GRF – Faculty of Civil Engineering, University of Belgrade
+
+These institutions typically follow the 20-task model, where each task is graded with whole numbers and contributes equally to the final entrance exam score. In some cases, specific negative marking rules may apply (e.g., MATF and GRF).
